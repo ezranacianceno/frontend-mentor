@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141518;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 350px;
+    background: linear-gradient(180deg, rgba(33,39,48,1) 37%, rgba(28,34,43,1) 77%, rgba(27,33,42,1) 100%);
+    border-radius: 20px;
+    padding: 40px 20px 20px 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .star-container img {
+    width: 20px;
+} */
+
+.star-container {
+    background-color: #253039;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.default-state h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    color: #858B94;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.default-state ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-state ul li {
+    text-align: center;
+    padding: 10px;
+    background-color: #272E37;
+    color: #858B94;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.default-state ul li:focus {
+    background-color: #7F8796;
+    color: white;
+}
+
+.default-state ul li:hover {
+    background-color: #EB7E35;
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #EB7E35;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: #EB7E35;
+}
+
+.default-state {
+    display: flex;
+}
+
+.thank-you-state {
+    display: none;
+}
+
+
+.thank-you-state .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thank-you-state img {
+    margin-bottom: 20px
+}
+
+.rating {
+    background-color: #253039;
+    color: #EB7E35;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.thank-you-state h2 {
+    margin-bottom: 10px;
+}
+
