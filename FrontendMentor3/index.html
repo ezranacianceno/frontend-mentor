@@ -60,10 +60,6 @@
   </main>
 
   <script>
-    // default hide thank you state
-    // $(document).ready(function(){
-    //   $(".thank-you-state").hide();
-    // });
 
     // listen for CLICK or key press on ENTER or SPACE
     function accessClick(event){
@@ -81,6 +77,8 @@
         }
     }
 
+    // selected rating will be displayed in thank you state
+
     let rating;
 
     $('.rating-btn').on('click keypress', function(event){
@@ -92,14 +90,13 @@
       }
     });
 
-
+    // hide default state and show thank you state when submit button is clicked
     $('.submit-btn').on('click keypress', function(event){
       if(accessClick(event) === true){
         console.log('submitted');
         $(".default-state").css("display","none");
 
         $(".thank-you-state").css("display","flex");
-
       }
     });
 
