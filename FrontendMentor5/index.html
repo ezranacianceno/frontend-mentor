@@ -23,15 +23,33 @@
         
       <div class="signup">
         <p class="signup-banner"><span class="bold-text">Try it free 7 days</span> then $20/mo. thereafter</p>
-        <div class="form" >
-          <form action="submit">
-            <input type="text" name="firstName" placeholder="First Name" required> <br>
-            <input type="text" name="lastName" placeholder="Last Name" required> <br>
-            <input type="email" name="email" placeholder="Email Address" required> <br>
-            <input type="password" name="password" placeholder="Password" required>
-            <!-- <button> -->
-              <input type="submit" value="CLAIM YOUR FREE TRIAL" role="button" class="submit-btn"/>
-            <!-- </button> -->
+        <div class="form-container">
+          <form class="form" id="form">
+            <div class="form-control success">
+              <input type="text" placeholder="First Name" id="firstName"> <br>
+              <img src="./images/icon-error.svg" alt="">
+              <p class="error-message">First Name cannot be empty</p>
+            </div>
+
+            <div class="form-control error">
+              <input type="text" placeholder="Last Name" id="lastName"><br>
+              <img src="./images/icon-error.svg" alt="">
+              <p class="error-message">Last Name cannot be empty</p>
+            </div>
+
+            <div class="form-control">
+              <input type="text" placeholder="Email" id="email"><br>
+              <img src="./images/icon-error.svg" alt="">
+              <p class="error-message">Looks like this is not an email</p>
+            </div>
+
+            <div class="form-control">
+              <input type="text" placeholder="Password" id="password"><br>
+              <img src="./images/icon-error.svg" alt="">
+              <p class="error-message">Password cannot be empty</p>
+            </div>
+
+            <button class="submit-btn">CLAIM YOUR FREE TRIAL</button>
           </form>
         
           <footer>By clicking the button, you are agreeing to our <a href="#" class="pink-text">Terms and Services</a></footer> 
@@ -42,7 +60,36 @@
   
   </main>
 
+  <script>
 
+    const form = document.getElementById('form');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+    form.addEventListener('submit', (e) => {
+      // prevents submission of form
+      e.preventDefault();
+
+      // calls checkInputs function
+      checkInputs();
+    })
+
+    // form validation
+    function checkInputs(){
+      //get the values from input fields
+      const firstNameValue = firstName.value.trim();
+      const lastNameValue = lastName.value.trim();
+      const emailValue = email.value.trim();
+      const password = password.value.trim();
+
+      if(firstNameValue === '') {
+        $
+      }
+    }
+
+  </script>
 
 
   
