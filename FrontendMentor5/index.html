@@ -9,6 +9,10 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
  <link rel="stylesheet" href="./index.css">
+ 
+ <!-- Jquery -->
+ <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -25,13 +29,13 @@
         <p class="signup-banner"><span class="bold-text">Try it free 7 days</span> then $20/mo. thereafter</p>
         <div class="form-container">
           <form class="form" id="form">
-            <div class="form-control success">
+            <div class="form-control">
               <input type="text" placeholder="First Name" id="firstName"> <br>
               <img src="./images/icon-error.svg" alt="">
               <p class="error-message">First Name cannot be empty</p>
             </div>
 
-            <div class="form-control error">
+            <div class="form-control">
               <input type="text" placeholder="Last Name" id="lastName"><br>
               <img src="./images/icon-error.svg" alt="">
               <p class="error-message">Last Name cannot be empty</p>
@@ -50,9 +54,9 @@
             </div>
 
             <button class="submit-btn">CLAIM YOUR FREE TRIAL</button>
+            <footer>By clicking the button, you are agreeing to our <a href="#" class="pink-text">Terms and Services</a></footer> 
           </form>
         
-          <footer>By clicking the button, you are agreeing to our <a href="#" class="pink-text">Terms and Services</a></footer> 
         </div>
       
       </div>
@@ -82,10 +86,30 @@
       const firstNameValue = firstName.value.trim();
       const lastNameValue = lastName.value.trim();
       const emailValue = email.value.trim();
-      const password = password.value.trim();
+      const passwordValue = password.value.trim();
 
       if(firstNameValue === '') {
-        $
+        $("#firstName").parent().addClass("error");
+        $('#firstName').attr('placeholder','');
+      }
+
+      if(lastNameValue === '') {
+        $("#lastName").parent().addClass("error");
+        $('#lastName').attr('placeholder','');
+      }
+
+      
+      if(emailValue === '') {
+        $("#email").parent().addClass("error");
+        $('#email').attr('placeholder','email@example/com');
+        $('#email').addClass('error-placeholder');
+
+      } 
+
+
+      if(passwordValue === '') {
+        $("#password").parent().addClass("error");
+        $('#password').attr('placeholder','');
       }
     }
 
