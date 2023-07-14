@@ -21,17 +21,19 @@
         <div class="star-container">
           <img src="./images/icon-star.svg" alt="">
         </div>
-        <h2>  How did we do?
-        </h2>
+
+        <h2>How did we do? </h2>
       
         <p> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-       
-        
+
+        <div class="button-group">
           <button tabindex="1" class="rating-btn" id="rating-one">1</button>
           <button tabindex="2" class="rating-btn" id="rating-two">2</button>
           <button tabindex="3" class="rating-btn" id="rating-three">3</button>
           <button tabindex="4" class="rating-btn" id="rating-four">4</button>
           <button tabindex="5" class="rating-btn" id="rating-five">5</button>
+        </div>
+       
         
       
         <button class="submit-btn" type="submit">SUBMIT</button>
@@ -69,7 +71,8 @@
         else if(event.type === 'keypress'){
             var code = event.charCode || event.keyCode;
             if((code === 32)|| (code === 13)){
-                return true;
+
+              return true;
             }
         }
         else{
@@ -87,6 +90,23 @@
         rating = $(this).text();
         console.log(rating);
         $(".actual-rating").text(rating);
+
+        // removes style of previously selected button
+        if($('button').hasClass('selected-btn')){
+          $('button').removeClass('selected-btn');
+        }
+
+        // add class to newly selected button
+        if($(this).text() === rating){
+          $(this).addClass('selected-btn');
+        }
+
+
+        console.log(this);
+        // if (this !== rating) {
+        //   $(this).removeClass('selected-btn');
+        //   rating = $(this).text();
+        // }
       }
     });
 

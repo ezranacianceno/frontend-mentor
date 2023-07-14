@@ -26,10 +26,6 @@ section {
     height: 100vh;
 }
 
-/* .star-container img {
-    width: 20px;
-} */
-
 .star-container {
     background-color: #253039;
     width: 40px;
@@ -52,14 +48,12 @@ p {
     margin-bottom: 20px;
 }
 
-.default-state ul {
-    list-style-type: none;
+.button-group {
     display: flex;
     justify-content: space-between;
 }
 
-.default-state ul li {
-    text-align: center;
+.rating-btn {
     padding: 10px;
     background-color: #272E37;
     color: #858B94;
@@ -67,14 +61,15 @@ p {
     height: 40px;
     border-radius: 30px;
     margin-bottom: 20px;
+    border: none;
 }
 
-.default-state ul li:active {
+button:focus {
     background-color: #7F8796;
     color: white;
 }
 
-.default-state ul li:hover {
+button:hover {
     background-color: #EB7E35;
     color: white;
 }
@@ -92,6 +87,11 @@ p {
 .submit-btn:hover {
     background-color: white;
     color: #EB7E35;
+}
+
+.selected-btn {
+    background-color: #7F8796;
+    color: white;
 }
 
 .default-state {
