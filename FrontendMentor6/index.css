@@ -13,19 +13,109 @@ body {
     font-family: 'Inter-Variable';
 }
 
+/* navbar */
+
 nav {
-    display: flex;
     padding: 20px 0;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
-ul {
+nav a img {
+    width: 60px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.nav-container {
+    width: 90%;
+}
+
+.nav-container nav .menu-toggle input {
+    opacity: 0;
+    z-index: 4;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 21px;
+    left: 314px;
+}
+
+
+.nav-container nav .menu-toggle .menu-button {
+    position: absolute;
+    top: 25px;
+    left: 314px;
+    width: 40px;
+    height: 20px;
+    z-index: 3;
+}
+
+.nav-container nav .menu-toggle .x-button {
+    position: absolute;
+    top: 21px;
+    left: 319px;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+.menu-checkbox:checked + .menu-button {
+    opacity: 0;
+}
+
+.menu-checkbox:checked ~ img.x-button {
+    opacity: 1;
+}
+
+.nav-container nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.nav-container nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container nav ul a:hover{
+    color: #D5655A;
+}
+
+.nav-content {
+    display: none;
+    position: relative;
+    left: 90px;
+    height: 100vh;
+    width: 75%;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-content ul {
     display: flex;
     list-style-type: none;
-    justify-content: end;
 }
 
 .nav-container {
     width: 100vw;
+}
+
+ul li {
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.menu-checkbox:checked ~ div.nav-content {
+    display: flex;
 }
 
 .container {
@@ -36,6 +126,7 @@ ul {
 
 .kv-img {
     width: 100%;
+    padding-top: 60px;
 }
 
 .kv-description p {
