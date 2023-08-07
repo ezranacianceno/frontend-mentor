@@ -42,15 +42,15 @@ nav a img {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 21px;
-    left: 314px;
+    top: 40%;
+    left: 86%;
 }
 
 
 .nav-container nav .menu-toggle .menu-button {
     position: absolute;
-    top: 25px;
-    left: 314px;
+    top: 40%;
+    left: 86%;
     width: 40px;
     height: 20px;
     z-index: 3;
@@ -58,8 +58,8 @@ nav a img {
 
 .nav-container nav .menu-toggle .x-button {
     position: absolute;
-    top: 21px;
-    left: 319px;
+    top: 40%;
+    left: 86%;
     width: 30px;
     height: 30px;
     z-index: 2;
@@ -93,7 +93,7 @@ nav a img {
 .nav-content {
     display: none;
     position: relative;
-    left: 90px;
+    left: 30%;
     height: 100vh;
     width: 75%;
     background-color: white;
@@ -207,4 +207,99 @@ h1 {
 .list-body p:last-of-type {
     font-size: 14px;
     font-weight: lighter;
+}
+
+/* mid-sized screen styling */
+@media screen and (min-width:426px){
+
+    /* adjust the position of the mobile menu buttons */
+    .nav-container nav .menu-toggle input {
+        top: 50%;
+        left: 92%;
+    }
+
+    .nav-container nav .menu-toggle .menu-button {
+        top: 50%;
+        left: 92%;
+    }
+
+    .nav-container nav .menu-toggle .x-button {
+        top: 50%;
+        left: 92%;
+    }
+}
+
+/* big screen styling */
+
+@media screen and (min-width: 1440px){
+
+    body {
+        padding: 150px 50px 100px;
+    }
+
+    /* hide the mobile menu buttons */
+    .nav-container nav .menu-toggle input {
+        display: none;
+    }
+
+    .nav-container nav .menu-toggle .menu-button {
+        display: none;
+
+    }
+
+    .nav-container nav .menu-toggle .x-button {
+        display: none;
+    }
+
+    nav {
+        top: 55px;
+        height: 80px;
+    }
+
+    nav a img {
+        width: 90px;
+        height: 45px;
+    }
+
+    .nav-content {
+        display: flex;
+        position: absolute;
+        height: 25px;
+        top: 30px;
+        left: 135px;
+        background: none;
+        justify-content: end;
+    }
+
+    .nav-container nav ul {
+        flex-direction: row;
+        padding-top: 0;
+        font-size: 16px;
+        column-gap: 20px;
+    }
+
+    .row {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    /* .col-md-2 {
+        
+    } */
+
+    .col-sm-1 {
+        width: 50%;
+        padding-right: 40px;
+    }
+
+
+    .kv-img {
+        padding-top: 0;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 55px;
+    }
+
 }
