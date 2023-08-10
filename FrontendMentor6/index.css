@@ -273,10 +273,6 @@ h1 {
         padding-top: 40px;
     }
 
-    .container:first-of-type {
-        padding-top: 20px;
-    }
-
     /* hide the mobile menu buttons */
     .nav-container nav .menu-toggle input {
         display: none;
@@ -330,7 +326,7 @@ h1 {
         display: flex;
         justify-content: space-between;
         column-gap: 40px;
-        padding-bottom: 40px 0;
+        padding-bottom: 40px;
     }
 
     .row:last-of-type {
@@ -349,7 +345,14 @@ h1 {
         width: 354px;
         height: 100%;
     }
+    
+    .key-visual {
+        padding-top: 0;
+    }
 
+    .new-container {
+        padding-top: 0;
+    }
 
     .kv-img {
         padding-top: 0;
