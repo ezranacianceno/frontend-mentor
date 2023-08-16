@@ -189,7 +189,7 @@ h1 {
 }
 
 .list-container img {
-    width: 30%;
+    width: 45%;
 }
 
 .list-body {
@@ -265,7 +265,7 @@ h1 {
 @media screen and (min-width: 1440px){
 
     body {
-        padding: 150px 150px 100px;
+        padding: 85px 150px 100px;
     }
 
     .container {
@@ -288,7 +288,6 @@ h1 {
     }
 
     nav {
-        top: 55px;
         height: 80px;
     }
 
