@@ -17,3 +17,9 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.container {
+    background-color: white;
+    border-radius: 25px;
+    width: 500px;
+}
