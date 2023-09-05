@@ -46,4 +46,22 @@ body {
     padding-bottom: 30px;
 }
 
+.divider {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+hr {
+    border: 0.5px solid #E0E0E0;
+    width: 80%;
+}
+
+.arrow-img {
+    background-color: #7F4EF7;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -32px;
+    right: 58px;
+    width: 70px;
 }
