@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,700&family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+:root {
+    --main-font: 'Popins', sans-serif;
+    --display-font: 'Poppins-ExtraBoldItalic', sans-serif;
+}
 
 * {
     box-sizing: border-box;
