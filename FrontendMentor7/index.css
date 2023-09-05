@@ -19,12 +19,6 @@
     padding: 0;
 }
 
-:root {
-    --main-font: 'Jost', sans-serif;
-    --second-font: 'Roboto', sans-serif;
-}
-
-
 body {
     font-family: var(--main-font);
     background-color: #F0F0F0;
