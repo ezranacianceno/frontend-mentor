@@ -65,3 +65,9 @@ hr {
     right: 58px;
     width: 70px;
 }
+
+#birthday-form {
+    display: flex;
+    column-gap: 20px;
+}
+
