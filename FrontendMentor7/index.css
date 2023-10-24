@@ -38,10 +38,10 @@ body {
 
 .form-container {
     padding-bottom: 30px;
+    position: relative;
 }
 
 .divider {
-    position: relative;
     padding-bottom: 25px;
 }
 
@@ -55,7 +55,7 @@ hr {
     padding: 15px;
     border-radius: 50%;
     position: absolute;
-    top: -32px;
+    top: 66px;
     right: 58px;
     width: 70px;
 }
@@ -73,15 +73,26 @@ label {
     letter-spacing: 2px;
 }
 
+
+
 input {
     padding: 10px;
     width: 100px;
     margin-top: 5px;
-    border-color: #E0E0E0;
-    border-radius: 5px;
+    /* border-color: #E0E0E0;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1px; */
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
     position: relative;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input:hover {
+    border: 1px solid #7F4EF7;
 }
 
 ::placeholder {
@@ -89,7 +100,18 @@ input {
     font-weight: bold;
     color: #8D8D8D;
     position: absolute;
-    top: 7px;
+    top: 10px;
+}
+
+button {
+    border: none;
+}
+
+.arrow-img:hover {
+    filter: brightness(0.5) saturate(0);
+    top: 66px;
+    right: 58px;
+    width: 70px;
 }
 
 .display-container {

@@ -19,33 +19,37 @@
       <form id="birthday-form">
         <div>
           <label for="day">DAY</label> <br>
-          <input type="number" min="1" max="31" id="day" placeholder="DD">
+          <input type="number" min="1" max="31" id="day" placeholder="DD" required>
         </div>
 
         <div>
           <label for="month">MONTH</label> <br>
-          <input type="number" min="1" max="12" id="month" placeholder="MM">
+          <input type="number" min="1" max="12" id="month" placeholder="MM" required>
         </div>
 
         <div>
           <label for="year">YEAR</label> <br>
-          <input type="number" min="1866" max="2023" id="year" placeholder="YYYY">
+          <input type="number" min="1866" max="2023" id="year" placeholder="YYYY" required>
         </div>
+
+        <button type="submit">
+          <img src="./assets/images/icon-arrow.svg" alt="" class="arrow-img">
+        </button>
       </form>
     </div>
 
     <div class="divider">
       <hr>
-      <img src="./assets/images/icon-arrow.svg" alt="" class="arrow-img">
     </div>
     <div class="display-container">
-      <p><span class="display-purple">- -</span> years</p>
-      <p><span class="display-purple">- -</span > months</p>
-      <p><span class="display-purple">- -</span > days</p>
+      <p><span id = "display-year"class="display-purple">- -</span> years</p>
+      <p><span id="display-months" class="display-purple">- -</span > months</p>
+      <p><span id="display-days" class="display-purple">- -</span > days</p>
     </div>
 
   </section>
   
 
+  <script src="./index.js"></script>
 </body>
 </html>
