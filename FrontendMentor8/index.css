@@ -1,0 +1,76 @@
+/* Navbar Start*/
+
+.flex-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+nav a {
+    color: #858585;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    background-color: grey;
+    color: white;
+}
+
+nav .mainNav {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.subNavContent{
+    display: none;
+}
+
+.mainLinks {
+    display: flex;
+    width: 70%;
+}
+
+.loginNav ul {
+    display: flex;
+}
+
+.regButton {
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    border: none;
+    background: none;
+    display: none;
+}
+
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-header {
+    width: 15%;
+}
+
+.nav-header a {
+    height: 40px;
+    display: block;
+}
