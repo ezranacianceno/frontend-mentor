@@ -180,6 +180,10 @@ h2 {
         z-index: 1;
     }
 
+    nav a {
+        padding: 10px 0;
+    }
+
     .mainLinks {
         flex-direction: column;
         justify-content: center;
