@@ -153,6 +153,16 @@ h2 {
     height: 25px;
 }
 
+/* Medium Screens */
+
+@media only screen and (max-width: 940px){
+    .clientSection img {
+        height: 20px;
+    }
+}
+
+
+/* Mobile */
 @media only screen and (max-width: 768px){
 
     .pcOnly {
