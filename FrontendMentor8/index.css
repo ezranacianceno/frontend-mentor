@@ -163,7 +163,7 @@ h2 {
 
 
 /* Mobile */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 769px){
 
     .pcOnly {
         display: none;
@@ -175,10 +175,19 @@ h2 {
 
     .logo {
         position: absolute;
-        top: 30px;
-        left: -200px;
         z-index: 1;
+        top: 0;
+        left: 0;
+        position: absolute;
     }
+
+    .nav-header a:first-child {
+        position: absolute;
+        top: 18px;
+        left: -200px;
+        width: 120px;
+    }
+    
 
     nav a {
         padding: 10px 0;
@@ -201,7 +210,7 @@ h2 {
         right: 0;
         height: 100vh;
         width: 70%;
-        z-index: 2;
+        z-index: 4;
         padding-top: 70px;
         background-color: white;
     }
@@ -228,6 +237,16 @@ h2 {
         text-align: center;
     }
 
+    .subNav {
+        position: relative;
+    }
+
+    .subNavArrow {
+        position: absolute;
+        top: 17px;
+        left: 85px;
+    }
+
     .subNavContent {
         padding-left: 40px;
     }
@@ -237,16 +256,37 @@ h2 {
     }
     
     /* display none */
-    /* .navLink {
+    .navLink {
         display: none;
     }
 
     nav .mainNav {
         background: none;
         height: 0;
-    } */
-
+    }
     /* end display none */
+
+
+    /* open-nav */
+    .mainNav.open-nav .navLink {
+        display: block;
+    }
+
+    nav .mainNav.open-nav {
+        background: white;
+	    height: 100vh;
+    }
+
+    .darkBG {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 2;
+    }
+
 
 
 
@@ -300,13 +340,27 @@ h2 {
 
 @media only screen and (max-width: 767px){
     .logo {
-        left: -172px;
+        left: 0;
+    }
+
+    .nav-header a:first-child {
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        width: 120px;
     }
 }
 
 
 @media only screen and (max-width: 650px){
     .logo {
-        left: -90px;
+        left: 15px;
+    }
+
+    .nav-header a:first-child {
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        width: 120px;
     }
 }
