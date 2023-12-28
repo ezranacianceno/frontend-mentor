@@ -19,3 +19,34 @@ navToggle.addEventListener("click", () => {
     openMenuImg.classList.toggle('closeMenu');
 })
 
+
+// get features
+const features = document.getElementById('subNavFeat');
+const featuresSubNav = document.getElementById('featuresSubNav');
+
+// get company
+const company = document.getElementById('subNavCompany');
+const companySubNav = document.getElementById('companySubNav');
+
+features.addEventListener("click", () => {
+    featuresSubNav.classList.toggle('open-subNav');
+})
+
+company.addEventListener("click", () => {
+    companySubNav.classList.toggle('open-subNav')
+})
+
+
+
+
+
+
+
+    
+
+
+    
+    
+    
+
+

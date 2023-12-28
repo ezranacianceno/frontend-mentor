@@ -16,6 +16,10 @@ body {
     color: #858585;
 }
 
+main {
+    height: 100vh;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -45,20 +49,42 @@ nav a {
     padding: 10px 20px;
     border-radius: 15px;
 }
-
-nav a:hover {
-    background-color: grey;
-    color: white;
-}
-
 nav .mainNav {
     display: flex;
     align-items: center;
     max-width: 1100px;
+    width: 100%;
 }
 
-.subNavContent{
+.subNavContent {
     display: none;
+}
+
+.dropdown .subNavContent.subNavContent.open-subNav {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    width: 170px;
+    padding-top: 15px;
+}
+
+.dropdown .subNavContent li{
+    padding: 5px 0;
+}
+
+.dropdown .subNavContent li {
+    padding-left: 20px;
+}
+
+.subNav {
+    position: relative;
+}
+
+.subNavArrow {
+    position: absolute;
+    top: 17px;
+    right: 1px;
 }
 
 .mainLinks {
@@ -77,31 +103,60 @@ nav .mainNav {
 
 .nav-toggle {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
     padding: 10px;
     border: none;
     background: none;
     display: none;
 }
 
+.openMenu { 
+    background: url(./images/icon-menu.svg) no-repeat top center;
+    background-size: 30px;
+}
+
+.closeMenu {
+    background: url(./images/icon-close-menu.svg) no-repeat top center;
+    background-size: 25px;
+}
+
+.nav-toggle span {
+    width: 30px;
+    height: 30px;
+}
 
 .logo {
     margin-right: auto;
 }
 
+
 .nav-header {
     width: 15%;
 }
 
+.nav-header a:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+}
+
 .nav-header a {
     height: 40px;
+    width: 90px;
     display: block;
 }
+
+/* end of navbar */
 
 main {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.kvContainer {
+    height: 700px
 }
 
 .kvSection {
@@ -110,6 +165,7 @@ main {
 
 .kvSection img {
     width: 100%;
+    max-height: 650px;
 }
 
 
@@ -253,6 +309,23 @@ h2 {
 
     #subNavCompany .subNavContent a{
         padding-left: 20px;
+    }
+
+    .subNavContent.open-subNav {
+        display: block;
+        position: static !important;
+    }
+
+    .subNavContent.open-subNav li {
+       padding: 15px 0;
+    }
+
+    .dropdown .subNavContent li {
+        padding: 10px 0;
+    }
+
+    .navLink img {
+        padding-right: 10px;
     }
     
     /* display none */

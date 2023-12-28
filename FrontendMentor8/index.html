@@ -17,41 +17,52 @@
 
     <nav class="navLinks container" id="navLinks">
       <ul>
-        <div class="mainNav">
+        <div id="mainNav" class="mainNav">
           <div class="nav-header">
             <a href="#"><img src="./images/logo.svg" alt="logo" class="logo"></a>
             <button class="nav-toggle" id="navToggle">
-              <img src="./images/icon-menu.svg" alt="icon-menu" id="open-menu">
+              <span id="open-menu" class="openMenu"></span>
             </button>
           </div>
           <div class="mainLinks">
             <li class="navLink">
-                <a href="#features" id="subNavFeat" class="subNav">Features</a>
-                <ul id ="featuresSubNav" class="subNavContent">
-                  <li class="navLink">
-                    <img src="./images/icon-todo.svg" alt="" srcset="">
-                    <a href="#">Todo List</a> 
-                  </li>
-                  <li class="navLink">
-                    <img src="./images/icon-calendar.svg" alt="" srcset="">
-                    <a href="#">Calendar</a>
-                  </li>
-                  <li class="navLink">
-                    <img src="./images/icon-reminders.svg" alt="" srcset="">
-                    <a href="#">Reminders</a>
-                  </li>
-                  <li class="navLink">
-                    <img src="./images/icon-planning.svg" alt="" srcset="">
-                    <a href="#">Planning</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="navLink"><a href="#company" id="subNavCompany" class="subNav">Company</a>
-                <ul id="companySubNav"class="subNavContent">
-                  <li class="navLink"><a href="#">History</a></li>
-                  <li class="navLink"><a href="#">Our Team</a></li>
-                  <li class="navLink"><a href="#">Blog</a></li>
-                </ul>
+                <div class="dropdown">
+                  <a href="#features" id="subNavFeat" class="subNav">
+                    Features
+                    <img src="./images/icon-arrow-down.svg" alt="" class="subNavArrow">
+                  </a>
+                  <ul id ="featuresSubNav" class="subNavContent">
+                    <li class="navLink">
+                      <img src="./images/icon-todo.svg" alt="">
+                      <a href="#">Todo List</a> 
+                    </li>
+                    <li class="navLink">
+                      <img src="./images/icon-calendar.svg" alt="">
+                      <a href="#">Calendar</a>
+                    </li>
+                    <li class="navLink">
+                      <img src="./images/icon-reminders.svg" alt="">
+                      <a href="#">Reminders</a>
+                    </li>
+                    <li class="navLink">
+                      <img src="./images/icon-planning.svg" alt="">
+                      <a href="#">Planning</a>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+              <li class="navLink">
+                <div class="dropdown">
+                  <a href="#company" id="subNavCompany" class="subNav">
+                    Company
+                    <img src="./images/icon-arrow-down.svg" alt="" class="subNavArrow">
+                  </a>
+                  <ul id="companySubNav"class="subNavContent">
+                    <li class="navLink"><a href="#">History</a></li>
+                    <li class="navLink"><a href="#">Our Team</a></li>
+                    <li class="navLink"><a href="#">Blog</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="navLink"><a href="#careers">Careers</a></li>
               <li class="navLink"><a href="#about">About</a></li>
@@ -100,6 +111,6 @@
 
     </main>
 
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
   </body>
 </html>
