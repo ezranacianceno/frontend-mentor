@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+}
+
+
+body {
+    font-family: var(--main-font);
+    color: #858585;
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+/* Navbar Start*/
+
+.flex-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+nav a {
+    color: #858585;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+nav .mainNav {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.subNavContent {
+    display: none;
+}
+
+.dropdown .subNavContent.subNavContent.open-subNav {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    width: 170px;
+    padding-top: 15px;
+}
+
+.dropdown .subNavContent li{
+    padding: 5px 0;
+}
+
+.dropdown .subNavContent li {
+    padding-left: 20px;
+}
+
+.subNav {
+    position: relative;
+}
+
+.subNavArrow {
+    position: absolute;
+    top: 17px;
+    right: 1px;
+}
+
+.mainLinks {
+    display: flex;
+    width: 70%;
+}
+
+.loginNav ul {
+    display: flex;
+}
+
+.regButton {
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    border: none;
+    background: none;
+    display: none;
+}
+
+.openMenu { 
+    background: url(./images/icon-menu.svg) no-repeat top center;
+    background-size: 30px;
+}
+
+.closeMenu {
+    background: url(./images/icon-close-menu.svg) no-repeat top center;
+    background-size: 25px;
+}
+
+.nav-toggle span {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+
+.nav-header {
+    width: 15%;
+}
+
+.nav-header a:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+}
+
+.nav-header a {
+    height: 40px;
+    width: 90px;
+    display: block;
+}
+
+/* end of navbar */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.kvContainer {
+    height: 700px
+}
+
+.kvSection {
+    width: 50%;
+}
+
+.kvSection img {
+    width: 100%;
+    max-height: 650px;
+}
+
+
+.introBody {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+h2 {
+    font-size: 60px;
+    color: black;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.learnBtn {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+.clientSection {
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clientSection img {
+    height: 25px;
+}
+
+/* Medium Screens */
+
+@media only screen and (max-width: 940px){
+    .clientSection img {
+        height: 20px;
+    }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 769px){
+
+    .pcOnly {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .nav-header a:first-child {
+        position: absolute;
+        top: 18px;
+        left: -200px;
+        width: 120px;
+    }
+    
+
+    nav a {
+        padding: 10px 0;
+    }
+
+    .mainLinks {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mainNav {
+        flex-direction: column;
+    }
+
+    
+    nav .mainNav {
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        z-index: 4;
+        padding-top: 70px;
+        background-color: white;
+    }
+    
+    .loginNav ul {
+        flex-direction: column;
+    }
+
+    .loginNav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navLink {
+        display: block;
+        /* height: 50px; */
+        width: 200px;
+        padding: 15px 0;
+        /* position: relative; */
+    }
+    
+    .loginNav a {
+        text-align: center;
+    }
+
+    .subNav {
+        position: relative;
+    }
+
+    .subNavArrow {
+        position: absolute;
+        top: 17px;
+        left: 85px;
+    }
+
+    .subNavContent {
+        padding-left: 40px;
+    }
+
+    #subNavCompany .subNavContent a{
+        padding-left: 20px;
+    }
+
+    .subNavContent.open-subNav {
+        display: block;
+        position: static !important;
+    }
+
+    .subNavContent.open-subNav li {
+       padding: 15px 0;
+    }
+
+    .dropdown .subNavContent li {
+        padding: 10px 0;
+    }
+
+    .navLink img {
+        padding-right: 10px;
+    }
+    
+    /* display none */
+    .navLink {
+        display: none;
+    }
+
+    nav .mainNav {
+        background: none;
+        height: 0;
+    }
+    /* end display none */
+
+
+    /* open-nav */
+    .mainNav.open-nav .navLink {
+        display: block;
+    }
+
+    nav .mainNav.open-nav {
+        background: white;
+	    height: 100vh;
+    }
+
+    .darkBG {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 2;
+    }
+
+
+
+
+    /* main section */
+
+    main {
+        flex-direction: column;
+    }
+
+    .kvSection {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .kvContainer {
+        padding: 20px 0;
+    }
+
+    .introBody {
+        width: 100%;
+    }
+
+    .introSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .introSection p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .pb-20 {
+        padding-bottom: 20px;
+    }
+
+    .clientSection {
+        position: initial;
+    }
+
+    .clientSection img {
+        height: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    .logo {
+        left: 0;
+    }
+
+    .nav-header a:first-child {
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        width: 120px;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    .logo {
+        left: 15px;
+    }
+
+    .nav-header a:first-child {
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        width: 120px;
+    }
+}
